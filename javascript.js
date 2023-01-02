@@ -1,4 +1,4 @@
-const gridContainer = document.querySelector('#grid-container');
+const gridContainer = document.getElementById('grid-container');
 
 const One = document.createElement('div');
 One.classList.add('grid-content');
@@ -843,3 +843,12 @@ gridContainer.appendChild(TwoHundredSixtySeven);
 const divBreakFifteen = document.createElement('div');
 divBreakFifteen.classList.add('div-break');
 gridContainer.appendChild(divBreakFifteen);
+
+
+//hover event
+const allDivs = document.querySelectorAll('.grid-content');
+allDivs.forEach((div) => {
+  div.addEventListener('mouseover', (event) => {
+    div.style.backgroundColor = 'red';
+  });
+})
