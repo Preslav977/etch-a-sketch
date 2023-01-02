@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.div-break {
+  flex-basis: 100%;
+}
+
+.grid-content {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+}
